@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwind -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.2/dist/flowbite.min.css" />
+    <!-- My css  -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Money Documentation</title>
+</head>
+
+<body>
+    <p class="text-7xl text-center my-5 text-sky-600 font-bold">Money Master💰 </p>
+    <main class="my-24 container mx-auto flex">
+        <div class="image mx-5">
+            <img src="images/money-master.png" alt="" class="image-tag">
+        </div>
+        <div class="w-24">
+
+        </div>
+        <div class="information flex flex-col items-center w-full">
+            <p class="font-bold text-2xl">Income</p>
+            <!-- main balance -->
+            <div class="flex justify-center items-center my-5">
+                <label for="" class="mx-5">Input: </label>
+                <input type="number" class="bg-gray-200 border-none rounded" id="main-balance" required>
+            </div>
+            <!-- expenses -->
+            <p class="font-bold text-2xl">Expences</p>
+            <div class="my-5 flex flex-col">
+                <!-- food -->
+                <div class="my-5">
+                    <label for="" class="mx-5">Food: </label>
+                    <input type="number" class="bg-gray-200 border-none rounded" id="food">
+                </div>
+                <!-- rent -->
+                <div>
+                    <label for="" class="mx-5">Rent: </label>
+                    <input type="number" class="bg-gray-200 border-none rounded ml-1" id="rent">
+                </div>
+                <!-- clothes -->
+                <div class="my-5">
+                    <label for="" class="mx-5">Cloths: </label>
+                    <input type="number" class="bg-gray-200 border-none rounded" id="cloth">
+                </div>
+                <!-- calculate button -->
+                <div class="flex justify-center items-center">
+                    <button class="text-2xl bg-blue-500 py-2 rounded-xl px-7 text-white" id="btn-calculate">Calculate</button>
+                </div>
+            </div>
+<!-- total expence -->
+            <p class="text-2xl text-center my-5 font-bold" >Total Expence: <span id="total-expence">0</span></p>
+<!-- Balance -->
+            <p class="text-2xl text-center my-5 font-bold" >Balance: <span id="balance">0</span></p>
+            <!-- Save parcentage of money -->
+            <div class="my-5">
+                <label for="" class="mx-5">Save: </label>
+                <input type="number" class="bg-gray-200 border-none rounded w-24" id="saveItem">
+                <span class="mx-5">%</span>
+                <button class="mx-5 bg-blue-400 text-white px-5 py-2 rounded-xl" id="save">Save</button>
+
+
+            </div>
+            <!-- Saving amount -->
+            <p class="text-2xl text-center my-2 font-bold">Saving Amount: <span id="saving-ammount">0</span></p>
+            <!-- Remaining balance -->
+            <p class="text-2xl text-center my-2 font-bold">Remaining balance: <span id="remaining-balance">0</span></p>
+        </div>
+    </main>
+    <!-- Tailwind script -->
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+    <script src="https://unpkg.com/flowbite@1.5.2/dist/flowbite.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- My script -->
+    <script src="js/index.js"></script>
+</body>
+
+</html>
